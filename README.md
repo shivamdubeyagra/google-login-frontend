@@ -56,7 +56,7 @@ This is the frontend of a Google login authentication system built using **React
 ## 💻 Run Locally
 
 # 1. Clone the repo
-git clone https://github.com/your-username/google-oauth-frontend.git
+git clone [https://github.com/your-username/google-oauth-frontend.git](https://github.com/shivamdubeyagra/google-login-frontend.git)
 
 # 2. Install dependencies
 cd google-oauth-frontend
