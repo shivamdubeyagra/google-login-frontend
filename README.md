@@ -33,3 +33,37 @@ This is the frontend of a Google login authentication system built using **React
 
 ## 🏗️ Project Structure
 
+---
+
+## 🔐 How Authentication Works
+
+1. User clicks **Login with Google**
+2. Redirected to Google for consent
+3. Google returns a `code` to frontend
+4. Frontend sends `POST /google` with the code to backend
+5. Backend exchanges code → gets user info + issues JWT token
+6. JWT token is stored in an **HttpOnly cookie**
+7. Frontend uses `/me` endpoint to fetch current user
+8. Logout clears the cookie and redirects to login page
+
+---
+
+## 📁 .env Example (Vite)
+
+
+---
+
+## 💻 Run Locally
+
+# 1. Clone the repo
+git clone https://github.com/your-username/google-oauth-frontend.git
+
+# 2. Install dependencies
+cd google-oauth-frontend
+npm install
+
+# 3. Add .env file with your backend API URL
+# 4. Run locally
+npm run dev
+
+
